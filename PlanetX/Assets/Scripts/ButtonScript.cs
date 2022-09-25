@@ -12,6 +12,8 @@ public class ButtonScript : MonoBehaviour
     public Button Continue;
     public static bool cont = false;
     Text collectedText;
+
+
     private void Start()
     {
         collectedText = GameObject.Find("CollectedText").GetComponent<Text>();
@@ -33,7 +35,6 @@ public class ButtonScript : MonoBehaviour
             Continue.interactable = false;
         }
         collectedText.text = PlayerPrefs.GetInt("RocketCount").ToString();
-       
 
     }
     public void OnClickPlay()

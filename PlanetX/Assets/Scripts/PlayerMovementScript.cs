@@ -61,7 +61,7 @@ public class PlayerMovementScript : MonoBehaviour
 
     void Jump()
     {
-        if (isGround && Input.GetKeyDown(KeyCode.Space))
+        if (isGround)
         {
             Audio.ad[2].Play();
             rb.velocity = Vector2.up * jumpValue;

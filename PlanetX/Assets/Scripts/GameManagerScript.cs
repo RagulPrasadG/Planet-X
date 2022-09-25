@@ -64,6 +64,7 @@ public class GameManagerScript : MonoBehaviour
         float y = Mathf.Cos(angle) * radius;
         return new Vector2(x, y);
     }
+
     float CalculateRadius()
     {
         float radius = Vector2.Distance(actualPlanet.transform.position, circleEdge.position);

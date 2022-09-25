@@ -15,5 +15,6 @@ public class AudioScript : MonoBehaviour
         {
             Destroy(this);
         }
+        DontDestroyOnLoad(this);
     }
 }
